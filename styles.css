@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    border: 0.1rem solid #ccc;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border: 0.1rem solid #ccc;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #ccc;
+    width: 100%;
+    transition: border 0.3s ease;
+}
+
+input:hover, select:hover {
+    border: 0.1rem solid #007BFF;
+}
+
+button {
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.list-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border: 0.1rem solid #ccc;
+}
+
+#employeeList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#employeeList li {
+    margin: 1rem 0;
+}
+
+#employeeList a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+#employeeList a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+th, td {
+    padding: 1.2rem;
+    text-align: left;
+    border: 0.1rem solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.1rem solid #ddd;
+}
+
+.map-section iframe {
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    table, iframe {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
